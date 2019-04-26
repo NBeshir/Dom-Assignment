@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="signUp.js"></script>
+    <title>Sign up form</title>
+    <style>
+         h1{
+           text-align: center;
+           color:#808080;
+        }
+        #signupbox{
+            width:400px;
+            background-color: #f4f4f4;
+            border:1px solid black;
+            margin: 0 auto;
+            
+            
+        }
+       
+        #signupform{
+            padding:40px;
+           text-align: center;
+          
+        }
+        input{
+            margin:5px;
+            padding:5px;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign up form</h1>
+    <div id="signupbox">
+    <form id="signupform" name="signForm" method="post" action="#" onsubmit=" return validate()">
+       <label for="fname"> First Name</label>
+           <input type="text" id="fname" name="fname" placeholder="please enter your first name here"  /><br>
+        <label for="lname"> Last Name</label>
+           <input type="text" id="lname" name="lname" placeholder="please enter your last name here"  /><br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="please enter your email here" /><br>
+        
+        <label for="radio">Gender</label>
+            <input type="radio" id="radio" name="gender"/>Female
+            <input type="radio" id="radio" name="gender"/>Male<br>
+           
+        <label for="password">Create a Password</label>
+            <input type="password" id="password" name="password" placeholder="please enter your password here"  /><br>
+           
+        <button id="submit">SignUp</button>
+    </form>
+</div>
+</body>
+</html>
